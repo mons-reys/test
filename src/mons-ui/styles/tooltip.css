@@ -1,0 +1,40 @@
+.tooltip{
+    position: relative;
+    color: salmon;
+    display: inline-block;
+    border-bottom: 1px dashed salmon;
+    cursor: help;
+}
+.tip{
+    position: absolute;
+    visibility: hidden;
+    width: 150px;
+    background-color: salmon;
+    color: white;
+    text-align: center;
+    padding: 5px 0;
+    opacity: 0;
+    transition: opacity 0.3s;
+    margin-left: -75px;
+    border-radius: 10px;
+    left: 50%;
+    bottom: 110%;
+}
+
+.tip.active{
+    visibility: visible;
+    opacity: 1;
+}
+
+.tip::after {
+    
+    content: "";   
+    border-width: 4px;
+    margin-left: px;
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    border-style: solid;
+    border-color: transparent;
+    border-top-color: salmon;
+}

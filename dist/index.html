@@ -1,0 +1,86 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title></title>
+  <style>
+    .container{
+      margin: 45px;
+      margin-top: 60px;
+    }
+    .snackbar-trigger{
+      align-items: center;
+      width: 100px;
+      padding: 10px 20px;
+      color: black;
+      background: #f2f2f2;
+      border-radius: 10px 20px;
+      display: block;
+      margin: auto;
+      border: none;
+      cursor: pointer;
+      outline: none;
+      font-weight: bold;
+      font-size: 0.8em;
+    }
+    .snackbar-trigger:hover{
+      background: salmon;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!--tooltip-->
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur
+       molestias laborum, magni sint,
+       a quidem repellendus nesciunt <span class="tooltip" data-message="it's a tooltip">vel nobis</span> vel 
+        voluptates inventore ad, tempora placeat repellat consectetur maxime dicta. Ad, tempore.</p>
+        <!--dropDown-->
+
+    <h1>Services </h1>
+    <div class="dropdown">
+      <div class="trigger">awesome t-shirts </div>
+        <div class="content">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus voluptatibus sapiente expedita asperiores porro
+          quaerat fugit ad eius quisquam reprehenderit blanditiis repudiandae est hic
+          eum deserunt, sequi facere? Aspernatur, laudantium?
+        </div>
+    </div>
+
+    <div class="dropdown">
+      <div class="trigger">hello wooord  </div>
+        <div class="content">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus voluptatibus sapiente expedita asperiores porro
+          quaerat fugit ad eius quisquam reprehenderit blanditiis repudiandae est hic
+          eum deserunt, sequi facere? Aspernatur, laudantium?
+        </div>
+    </div>
+    <!--tabs-->
+    <div class="tabs">
+      <ul>
+        <li class="trigger active" data-target="#about">about</li>
+        <li class="trigger" data-target="#services">services</li>
+        <li class="trigger" data-target="#returns">returns</li>
+      </ul>
+      <div class="content active" id="about">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate magni nostrum dicta dolores beatae minus? Autem quos ipsam
+          , totam voluptate, cum officia exercitationem consequuntur aliquid eveniet recusandae facilis ipsum impedit?</p>
+      </div>
+      <div class="content " id="services">
+        <p>22222222  elit. Cupiditate magni nostrum dicta dolores beatae minus? Autem quos ipsam
+          , totam voluptate, cum officia exercitationem consequuntur aliquid eveniet recusandae facilis ipsum impedit?</p>
+      </div>
+      <div class="content " id="returns">
+        <p>afhjhfakjzhzefkjhazekfjkzjae ia exercitationem consequuntur aliquid eveniet recusandae facilis ipsum impedit?</p>
+      </div>
+    </div>
+    <!--snackbar-trigger-->
+    <button class="snackbar-trigger">click me !</button>
+  </div>
+  
+  
+  <script src="assets/bundle.js"></script>
+</body>
+</html>
